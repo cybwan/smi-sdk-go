@@ -44,6 +44,8 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 		&HTTPRouteGroupList{},
 		&TCPRoute{},
 		&TCPRouteList{},
+		&UDPRoute{},
+		&UDPRouteList{},
 	)
 	metav1.AddToGroupVersion(scheme, SchemeGroupVersion)
 	return nil
